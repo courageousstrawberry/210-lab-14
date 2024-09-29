@@ -16,4 +16,8 @@ class Color {
         array<int,3> getColor() const{
             return {red, green, blue};
         }
+        void print(){
+            cout << "The color is: " << endl;
+            cout << red << ", " << green << ", " << blue << endl;
+        }
 };
