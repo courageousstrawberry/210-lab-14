@@ -1,6 +1,7 @@
 #include <iostream>
 #include <array>
 
+using namespace std;
 class Color {
     private:
         int red;
