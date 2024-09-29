@@ -8,6 +8,9 @@ class Color {
         int green;
         int blue;
     public:
+        Color(int r, int g, int b) {
+            setColor(r,g,b);
+        }
         void setColor(int r, int g, int b){
             red = r;
             green = g;
@@ -21,3 +24,13 @@ class Color {
             cout << red << ", " << green << ", " << blue << endl;
         }
 };
+
+int main() {
+    Color red(255,0,0);
+    Color green(0,255,0);
+    Color blue(0,0,255);
+
+    red.print();
+    green.print();
+    blue.print();
+}
