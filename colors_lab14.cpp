@@ -1,4 +1,5 @@
 #include <iostream>
+#include <array>
 
 class Color {
     private:
@@ -6,9 +7,12 @@ class Color {
         int green;
         int blue;
     public:
-        void set_color(int r, int g, int b){
+        void setColor(int r, int g, int b){
             red = r;
             green = g;
             blue = b;
+        }
+        array<int,3> getColor() const{
+            return {red, green, blue};
         }
 };
