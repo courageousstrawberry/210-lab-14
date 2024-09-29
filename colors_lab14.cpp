@@ -30,7 +30,13 @@ int main() {
     Color green(0,255,0);
     Color blue(0,0,255);
 
+    cout << "Red" << endl;
+    cout << "-----------" << endl;
     red.print();
+    cout << "Green" << endl;
+    cout << "-----------" << endl;
     green.print();
+    cout << "Blue" << endl;
+    cout << "-----------" << endl;
     blue.print();
 }
