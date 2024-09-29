@@ -29,6 +29,7 @@ int main() {
     Color red(255,0,0);
     Color green(0,255,0);
     Color blue(0,0,255);
+    Color orange(255,165,0);
 
     cout << "Red" << endl;
     cout << "-----------" << endl;
@@ -39,4 +40,7 @@ int main() {
     cout << "Blue" << endl;
     cout << "-----------" << endl;
     blue.print();
+    cout << "Orange" << endl;
+    cout << "-----------" << endl;
+    orange.print();
 }
