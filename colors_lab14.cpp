@@ -13,18 +13,29 @@ class Color {
     public:
         // Constructor for the class.
         Color(int r, int g, int b) {
-            // Use setter to initialize the object
-            setColor(r,g,b);
-        }
-        // Setter function to set each integer to it's corresponding private variables.
-        void setColor(int r, int g, int b){
             red = r;
             green = g;
             blue = b;
         }
-        // Getter function that returns an array with each integer.
-        array<int,3> getColor() const{
-            return {red, green, blue};
+        // Setter functions to set each integer to it's corresponding private variables.
+        void setRed(int r){
+            red = r;
+        }
+        void setGreen(int g){
+            green = g;
+        }
+        void setBlue(int b){
+            blue = b;
+        }
+        // Getter functions that returns an array with each integer.
+        int getRed() const{
+            return red;
+        }
+        int getGreen() const{
+            return green;
+        }
+        int getBlue() const{
+            return blue;
         }
         // Print function that displays the integer values of the color.
         void print(){
